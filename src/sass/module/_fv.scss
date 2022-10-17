@@ -1,0 +1,25 @@
+@use 'global' as *;
+
+.fv__inner{
+    padding-top: rem(10);
+    padding-left: rem(10);
+    padding-right: rem(10);
+}
+
+.fv__body{
+    border-bottom: 2px solid #000;
+}
+
+.fv__title{
+    font-size: rem(34);
+    font-weight: $bold;
+    margin-top: rem(20);
+}
+
+.fv__subtitle{
+    font-size: rem(23);
+    font-weight: $regular;
+    margin-top: rem(10);
+    padding-bottom: rem(10);
+}
+

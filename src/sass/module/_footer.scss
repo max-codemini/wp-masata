@@ -1,0 +1,25 @@
+@use "global" as *;
+
+.footer{
+    background-color:#001135 ;
+}
+
+.footer__inner{
+    padding-top: rem(50);
+    padding-left: rem(50);
+    padding-right: rem(50);
+    padding-bottom: rem(30);
+}
+
+.footer__title{
+    margin-top: rem(50);
+    width:rem(108.48);
+    max-width:100%;
+    height:rem(80);
+}
+
+.footer__copy-right{
+    font-size: rem(12);
+    font-weight: $regular;
+    color: $white;
+}

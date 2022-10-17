@@ -1,0 +1,23 @@
+@use "global" as *;
+
+.service{
+    padding-bottom: rem(80);
+}
+
+.service__head{
+    padding-right: rem(20);
+    padding-left: rem(20);
+}
+
+.service__items{
+    margin-top: rem(20);
+}
+
+
+.service__item{
+    margin-top: rem(60);
+}
+
+.service__item:first-child{
+    margin-top: 0;
+}

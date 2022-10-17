@@ -1,0 +1,39 @@
+@use "global" as *;
+
+.read-more-button{
+    display: inline-block;
+    border: 1px solid #001E63;
+    border-radius: rem(4);
+}
+
+.read-more-button span{
+    display: inline-block;
+    font-size: rem(14);
+    font-family: $english;
+    color:#001E63;
+    font-weight: $medium;
+    text-transform: uppercase; 
+    padding:rem(11) rem(24);
+    
+}
+
+.read-more-button span::after{
+    content:"";
+    width: rem(7);
+    height:rem(7);
+    border-top: 1px solid #001E63;
+    border-right: 1px solid #001E63;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    display: inline-block;
+    margin-left: rem(8.2);
+    margin-bottom: rem(2);
+}
+
+.read-more-button--noline{
+    border: none;
+}
+
+.read-more-button--noline span{
+    padding: 0;
+}

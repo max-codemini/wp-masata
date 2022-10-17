@@ -1,0 +1,38 @@
+@use "global" as *;
+
+.about__img{
+    position: relative;
+}
+
+.about__img::before{
+    content: "";
+    display: block;
+    padding-top: 87.164179%;//比率
+	}
+
+.about__img img{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:100%;
+    height:100%;
+    object-fit: cover;
+	object-position:center;
+}
+
+.about__title{
+    margin-top: rem(30);
+}
+
+.about__text{
+    font-size: rem(14);
+    margin-top: rem(30);
+    font-weight: $bold;
+    line-height: 2.285;
+}
+
+.about__button{
+    margin-top: rem(40);
+    text-align: right;
+}

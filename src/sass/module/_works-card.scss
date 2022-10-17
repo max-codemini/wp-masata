@@ -1,0 +1,67 @@
+@use "global" as *;
+
+.works-card__inner{
+    padding-left: rem(50);
+    padding-right: rem(30);
+}
+
+.works-card__body{
+    margin: auto;
+    display: flex;
+    border-bottom: 1px solid #E2E2E2;
+    max-width:rem(295);
+    width:100%;
+    padding-bottom: rem(30);
+}
+
+.works-card__img{
+    position: relative;
+    width:100%;
+    max-width:rem(120);
+}
+
+.works-card__img::before{
+    content: "";
+    display: block;
+    padding-top: 75%;//比率
+	}
+
+.works-card__img img{
+    position:absolute;
+    width:100%;
+    top:0;
+    object-fit: cover;
+		object-position:center;
+}
+
+.works-card__textbox{
+    margin-left: rem(18);
+    max-width:rem(157);
+}
+
+.works-card__category{
+    display: inline-block;
+    font-size: rem(10);
+    color:#626262;
+    background-color: #F3F3F3;
+    padding: rem(5) rem(15);
+    font-weight: $bold;
+}
+
+.works-card__title{
+    font-size: rem(14);
+    font-weight: $bold;
+    line-height: 1.75;
+    margin-top: rem(12);
+}
+
+.works-card__date{
+    font-weight: $bold;
+    margin-top: rem(12);
+    color: #A9A9A9;
+    font-size: rem(10);
+}
+
+
+
+

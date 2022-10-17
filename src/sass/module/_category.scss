@@ -1,0 +1,19 @@
+@use "global" as *;
+
+
+.category__list{
+    font-size: rem(12);
+    color: #A9A9A9;
+    font-weight: $bold;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: rem(30);
+}
+
+.category__list li:nth-child(even){
+    margin-left: rem(40);
+}
+
+.category__list li:nth-child(n + 3){
+    margin-top: rem(15);
+}

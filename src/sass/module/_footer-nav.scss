@@ -1,0 +1,26 @@
+@use "global" as *;
+
+.footer-nav__item{
+    width:100%;
+    border-top: 1px solid #011950;
+}
+
+.footer-nav__item:last-child{
+    border-bottom: 1px solid #011950;
+}
+
+.footer-nav__item a{
+    color:$white;
+    display: block;
+    padding:rem(19.5) 0;
+    padding-left: rem(3);
+    letter-spacing: 0.125em;
+    font-size: rem(16);
+    line-height: 1;
+}
+
+.footer-nav__item a:hover{
+    text-decoration: underline;
+    text-decoration-color: #FFEA2E;
+    text-underline-offset: 7px;
+}

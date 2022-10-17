@@ -1,0 +1,39 @@
+@use "global" as *;
+
+.topics__body{
+    border-bottom: 1px solid #E2E2E2;
+    padding-bottom: rem(20);
+    padding-top: rem(20);
+}
+
+.topics__meta{
+    display: flex;
+    align-items: center;
+}
+
+.topics__date{
+    font-weight: $bold;
+    color: #A9A9A9;
+    font-size: rem(10);
+    margin-right: rem(4);
+}
+
+.topics__category{
+    display: inline-block;
+    font-size: rem(10);
+    color:#626262;
+    background-color: $white;
+    padding: rem(5) rem(15);
+    font-weight: $bold;
+    margin-left: rem(6);
+}
+
+
+
+.topics__title{
+    font-size: rem(14);
+    font-weight: $bold;
+    line-height: 1.75;
+    margin-top: rem(20);
+}
+

@@ -1,0 +1,12 @@
+@use "global" as *;
+
+.section-title{
+    font-size: rem(38);
+    font-family: $second;
+    color:$black;
+    line-height: 1;
+}
+
+.section-title--small{
+    font-size: rem(14);
+}

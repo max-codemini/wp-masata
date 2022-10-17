@@ -1,0 +1,25 @@
+@use "global" as *;
+
+.news{
+    background-color: #F3F3F3;
+    padding-top: rem(60);
+    padding-bottom: rem(80);
+}
+
+.news__category{
+    margin-top: rem(40);
+}
+
+.news__inner{
+    padding-left: rem(50);
+    padding-right: rem(30);
+}
+
+.news__items{
+    margin-left: rem(30);
+}
+
+.news__button{
+    text-align: right;
+    margin-top: rem(40);
+}

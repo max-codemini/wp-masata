@@ -1,0 +1,32 @@
+@use "global" as *;
+
+.works{
+    background-color: #F3F3F3;
+    padding-top: rem(60);
+}
+
+.works__inner{
+    margin-left: rem(20);
+    background-color: #fff;
+    padding-bottom: rem(80);
+}
+
+.works__items{
+    padding-top: rem(30);
+    margin-top: rem(20);
+}
+
+.works__item{
+    margin-top: rem(30);
+}
+
+.works__item:first-child{
+    margin-top: rem(0);
+}
+
+.works__button{
+    margin-top: rem(40);
+    text-align: right;
+    padding-left: rem(20);
+    padding-right: rem(30);
+}
