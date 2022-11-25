@@ -27,8 +27,12 @@
     color: $white;
     font-size: rem(26);
     font-weight: $bold;
-    left:rem(30);
-    bottom:rem(55);
+    left:rem(50);
+    top:rem(75);
+    @include mq(md){
+        position: static;
+        margin-top: rem(20);
+    }
 }
 
 .service-card__subtitle{
@@ -36,8 +40,11 @@
     color: $white;
     font-family: $second;
     font-size: rem(16);
-    left:rem(30);
+    left:rem(50);
     top:rem(55);
+    @include mq(md){
+        position: static;
+    }
 }
 
 .service-card__text-inner{
@@ -50,9 +57,39 @@
     line-height: 2.285;
     margin-top: rem(20);
     font-weight: $bold;
+    @include mq(md){
+        display: none;
+        color: $white;
+        font-weight: $bold;
+        margin-top: rem(30);
+    }
 }
 
 .service-card__button{
     margin-top: rem(20);
     text-align: right;
+    @include mq(md){
+        text-align: center;
+        margin-top: rem(30);
+    }
 }
+
+.service-card__button-text{
+    color: $white;
+}
+
+.service-card__button-text--01::after, .service-card__button-text--02::after, .service-card__button-text--03::after{
+    position:absolute;
+    content:"";
+    width: rem(7);
+    height:rem(7);
+    border-top: 1px solid $white;
+    border-right: 1px solid $white;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    display: inline-block;
+    top:rem(18);
+    right:rem(16);
+    transition: 0.3s;
+}
+

@@ -2,7 +2,7 @@
 
 .sp-nav{
     display: none;
-    position:absolute;
+    position: fixed;
     top:0;
     left:0;
     right:0;
@@ -24,8 +24,8 @@
     position: fixed;
 }
 
-.sp-nav__items{
-    padding: rem(160) rem(50) 0;
+.sp-nav__body{
+    padding: rem(160) rem(50);
     min-height: 100vh;
 }
 
@@ -52,4 +52,19 @@
     text-decoration: underline;
     text-decoration-color: #FFEA2E;
     text-underline-offset: 7px;
+}
+
+.sp-nav__icon{
+    margin-top: rem(50);
+}
+
+
+
+
+.is-menuOpen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
 }

@@ -1,0 +1,21 @@
+@use "global" as *;
+
+/*丸の拡大*/
+.circle-bg{
+    position: fixed;
+    /*丸の形*/
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #001135;
+    /*丸のスタート位置と形状*/
+  transform: scale(0);/*scaleをはじめは0に*/
+  right:-50px;
+    bottom:-50px;
+    transition: all .6s;/*0.6秒かけてアニメーション*/
+}
+
+.circle-bg.circleactive{
+  transform: scale(50);/*クラスが付与されたらscaleを拡大*/
+}
+

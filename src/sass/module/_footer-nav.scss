@@ -3,10 +3,16 @@
 .footer-nav__item{
     width:100%;
     border-top: 1px solid #011950;
+    @include mq(md){
+        border-top: none;
+    }
 }
 
 .footer-nav__item:last-child{
     border-bottom: 1px solid #011950;
+    @include mq(md){
+        border-bottom: none;
+    }
 }
 
 .footer-nav__item a{
@@ -17,6 +23,18 @@
     letter-spacing: 0.125em;
     font-size: rem(16);
     line-height: 1;
+    font-family: $english;
+    text-transform: uppercase; 
+    @include mq(md){
+        padding: rem(10) 0;
+    }
+}
+
+.footer-nav__item:last-child{
+    @include mq(md){
+        padding-top: rem(13);
+        padding-bottom: 0;
+    }
 }
 
 .footer-nav__item a:hover{

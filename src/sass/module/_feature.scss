@@ -1,0 +1,29 @@
+@use "global" as *;
+
+.feature{
+    padding:rem(30) rem(20);
+    background-color: #fff;
+    @include mq(md){
+        padding: rem(40) rem(40) rem(40) rem(170);
+    }
+}
+
+.feature__title{
+    font-weight: $medium;
+    font-size: rem(14);
+    font-family: $second;
+    text-transform:uppercase;
+    @include mq(md){
+        font-size: rem(22);
+    }
+}
+
+.feature__text{
+    font-weight: $bold;
+    font-size: rem(14);
+    margin-top: rem(21);
+    line-height: 2.25;
+    @include mq(md){
+        font-size: rem(16);
+    }
+}

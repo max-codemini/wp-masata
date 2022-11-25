@@ -1,0 +1,29 @@
+@use "global" as *;
+
+
+.recommend--new{
+    margin-top: rem(80);
+    @include mq(md){
+        margin-top: 0;
+    }
+}
+
+.recommend__title{
+    background-color: #001135;
+    color: $white;
+    font-weight: $bold;
+    font-size: rem(14);
+    padding:rem(15) rem(18)
+}
+
+.recommend__list{
+    font-weight: $bold;
+    font-size: rem(14);
+    padding:rem(18);
+    border-bottom: 1px solid #E4E4E4;
+    
+}
+
+.recommend__list:last-child{
+    border-bottom: none;
+}

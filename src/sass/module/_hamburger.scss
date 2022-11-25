@@ -1,7 +1,9 @@
 @use "global" as *;
 
 .hamburger{
-    position:relative;
+    position: absolute;
+    right:rem(30);
+    top:rem(30);
     width:rem(25);
     height:rem(17);
     z-index: 100;
@@ -28,7 +30,11 @@
 }
 
 .hamburger span:nth-child(3){
-    top:65%;
+    top:63%;
+}
+
+.hamburger.is-active{
+    position:fixed;
 }
 
 .hamburger.is-active span{

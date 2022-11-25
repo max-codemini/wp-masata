@@ -5,48 +5,111 @@
     color:$white;
 }
 
+.contact__inner{
+    @include mq(md){
+        display: flex;
+    flex-direction: row-reverse; /* 横並び逆順 */
+    justify-content: center;
+    max-width: rem(1440);
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+    }
+}
+    
+
 .contact__textbox{
     padding: rem(80) rem(70);
-    max-width: rem(600);
+    max-width: rem(620);
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    @include mq(md){
+        padding-top:rem(78);
+        padding-bottom:rem(84);
+        padding-left: 0;
+        padding-right: 0;
+        max-width: rem(520);
+        width:100%;
+    }
 }
 
 .contact__title{
     font-size: rem(14);
     line-height: 1.75;
+    @include mq(md){
+        font-size: rem(18);
+    }
 }
 
 .contact__button--01{
     margin-top: rem(40);
+    @include mq(md){
+        margin-top: rem(32);
+    }
+}
+
+.contact__button-text--01{
+    display: inline-block;
     padding: rem(18) rem(52);
     border: 1px solid $white;
     border-radius: rem(4);
     text-align: center;
+    
+    @include mq(md){
+        font-size: rem(22);
+    }
 }
 
 .contact__button--02{
     margin-top: rem(20);
+}
+
+.contact__button-text--02{
+    display: inline-block;
     padding:rem(18) rem(41) rem(18) rem(50);
     border: 1px solid $white;
     border-radius: rem(4);
     text-align: center;
+    
+    @include mq(md){
+        font-size: rem(22);
+        
+    }
+}
+
+.contact__icon{
+    display: inline-block;
+    margin-right: rem(10);
+    @include mq(md){
+        margin-right: rem(16);
+    }
 }
 
 .contact__text{
     margin-top: rem(10);
     font-size: rem(12);
+    @include mq(md){
+        font-size: rem(14);
+        margin-top: rem(20);
+    }
 }
 
 .contact__img{
     position: relative;
+    width:100%;
+    @include mq(md){
+        max-width:rem(820);
+    }
 }
 
 .contact__img::before{
     content: "";
     display: block;
     padding-top: 64%;//比率
+    @include mq(md){
+        padding-top: 54.390244%;
+    }
 	}
 
 .contact__img img{
@@ -58,4 +121,100 @@
     height:100%;
     object-fit: cover;
 	object-position:center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contact__button-text{
+    /*アニメーションの起点とするためrelativeを指定*/
+    position: relative;
+    overflow: hidden;
+    /*ボタンの形状*/
+  text-decoration: none;
+  display: inline-block;
+    border: 1px solid $white;/* ボーダーの色と太さ */
+    padding: 10px 30px;
+    text-align: center;
+    outline: none;
+    /*アニメーションの指定*/   
+    transition: ease .2s;
+}
+
+/*ボタン内spanの形状*/
+.contact__button-text span {
+  position: relative;
+  z-index: 3;/*z-indexの数値をあげて文字を背景よりも手前に表示*/
+  color:$white;
+}
+
+
+.contact__button-text:hover{
+    color: #011950;
+  }
+
+.contact__button-text:hover span{
+  color: #011950;
+}
+
+/*== 背景が流れる（左から右） */
+.bgleft:before {
+  content: '';
+    /*絶対配置で位置を指定*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+    /*色や形状*/
+  background:$white;/*背景色*/
+  width: 100%;
+  height: 100%;
+    /*アニメーション*/
+  transition: transform .6s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  transform: scale(0, 1);
+  transform-origin: right top;
+}
+
+/*hoverした際の形状*/
+.bgleft:hover:before{
+  transform-origin:left top;
+  transform:scale(1, 1);
+}
+
+
+
+
+
+
+.fa-envelope:before {
+    display: inline-block;
+    margin-right: 10px;
+    @include mq(md){
+        margin-right: rem(10);
+    }
+}
+
+.fa-phone:before{
+        // content:"\f095";
+    font-family: "Font Awesome 6 Free";
+    font-weight:700;
+    display: inline-block;
+    margin-right: 10px;
+    @include mq(md){
+        margin-right: rem(10);
+    }
 }

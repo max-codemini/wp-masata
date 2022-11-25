@@ -1,0 +1,27 @@
+@use "global" as *;
+
+.about-access__inner{
+    padding-left: rem(20);
+    @include mq(md){
+        padding-left: rem(170);
+        width:100%;
+        max-width: rem(1440);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.about-access__address{
+    font-size: rem(14);
+    margin-top: rem(20);
+}
+
+.about-access__address span{
+    display: block;
+    margin-top: rem(4);
+}
+
+.about-access__map{
+    margin-top: rem(20);
+}
+

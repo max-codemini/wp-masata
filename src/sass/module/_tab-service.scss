@@ -1,0 +1,84 @@
+@use "global" as *;
+
+.tab-service{ /* 下層メニューのスタイル */
+    width: 100%;
+    left: 0;
+    padding-top: rem(20);
+    display: none;
+    position: absolute;
+    top:100%;
+}
+
+.tab-service::before{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.4);
+    z-index: -10;
+}
+
+.tab-service__items{
+    background-color: #fff;
+    padding: rem(50) rem(60);
+    display: flex;
+    max-width: rem(930);
+    width:100%;
+    margin: auto;
+}
+
+.tab-service__title{
+    font-size: rem(30);
+    font-family: $second;
+    font-weight: $bold;
+    margin-right: rem(93);
+}
+
+.tab-service__item{
+    width:100%;
+    max-width:rem(180);
+    display: block;
+}
+
+.tab-service__item:nth-child(3){
+    margin-left: rem(30);
+    margin-right: rem(30);
+}
+
+
+.tab-service__img{
+    position: relative;
+}
+
+.tab-service__img::before{
+    content: "";
+    display: block;
+    padding-top: 77.777777777777777777%;//比率
+	}
+
+.tab-service__img img{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:100%;
+    height:100%;
+    object-fit: cover;
+	object-position:center;
+}
+
+.tab-service__text{
+    display: inline-block;
+    font-size: rem(14);
+    font-weight: $bold;
+    margin-top: rem(10);
+    background: linear-gradient($black, $black) 0 100%/0 1px no-repeat;
+    text-decoration: none;
+}
+
+.tab-service__item:hover .tab-service__text{
+    background-size: 100% 1px;
+}

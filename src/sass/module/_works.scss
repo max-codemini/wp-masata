@@ -5,19 +5,35 @@
     padding-top: rem(60);
 }
 
+.works__head{
+    padding-right: rem(20);
+    padding-left: rem(20);
+    @include mq(md){
+        max-width: rem(1100);
+        width:100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 .works__inner{
     margin-left: rem(20);
     background-color: #fff;
     padding-bottom: rem(80);
-}
-
-.works__items{
-    padding-top: rem(30);
     margin-top: rem(20);
+    padding-top: rem(30);
+    @include mq(md){
+        margin-left: rem(170);
+        margin-top: rem(40);
+        padding-top: rem(120);
+    }
 }
 
 .works__item{
     margin-top: rem(30);
+    @include mq(md){
+        margin-top: rem(50);
+    }
 }
 
 .works__item:first-child{
@@ -29,4 +45,10 @@
     text-align: right;
     padding-left: rem(20);
     padding-right: rem(30);
+    @include mq(md){
+        max-width: rem(1090);
+        width:100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }

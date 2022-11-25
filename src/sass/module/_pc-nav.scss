@@ -8,11 +8,13 @@
 }
 
 .pc-nav__item,
-.pc-nav__item a{
+.pc-nav__link{
     height:inherit;
 }
 
-.pc-nav__item a{
+.pc-nav__link{
+    font-family: $english;
+    position:relative;
     color:$black;
     display: flex;
     align-items: center;
@@ -20,52 +22,53 @@
     letter-spacing: 0.2em;
     line-height: 1;
     font-weight: $regular;
-    padding-left: rem(15);
-    padding-right: rem(15);
+    padding-left: rem(25);
+    padding-right: rem(25);
     letter-spacing: 0.125em;
 }
 
-.pc-nav__item a:hover{
-    text-decoration: underline;
-    text-decoration-color: #FFEA2E;
-    text-underline-offset: 7px;
+.pc-nav__link::before{
+    display: none;
+    top: 55px;
+    left: 50%;
+    transform: translateX(-50%);
+    content:'';
+    width: 6px;
+    border-bottom: 6px solid #011950;
+    transition: .3s;
 }
 
-.pc-nav__item:first-child a{
-    padding-left: 0;
+.pc-nav__link:hover::before{
+    display: block; 
+    position: absolute;
 }
-.pc-nav__item:nth-child(5) a{
-    padding-right: rem(30);
-    padding-left: rem(15);
-}
+
 .pc-nav__item:last-child a{
-    padding: 0 rem(32);
-    background-color: $white;
-    color: $black;
-    @include mq(md){
-        padding: rem(0) rem(30) rem(0) rem(32);
-    }
+    padding: 0 rem(42);
+    background-color: #011950;
+    color: $white;
 }
 
-.pc-nav__item:last-child a:hover{
-    color:$white;
-    text-decoration: none;
+.pc-nav__item:last-child a span{
+    display: inline-block;
+    margin-right: rem(10);
 }
 
-// ブログ一覧
 
-.pc-nav__item--blog a{
-    padding-bottom: rem(2);
-}
 
-.pc-nav__item--blog:nth-child(5) a{
-    @include mq(md){
-        padding-right: rem(29);
-    }
-}
 
-.pc-nav__item--blog:last-child a{
-    @include mq(md){
-        padding: rem(0) rem(29) rem(2) rem(33);
-    }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

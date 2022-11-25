@@ -1,0 +1,56 @@
+@use "global" as *;
+
+.breadcrumb{
+    font-weight: $regular;
+    font-size: rem(15);
+    font-family: $english;
+    text-align: right;
+    color: #A9A9A9;
+}
+
+.breadcrumb--about, .breadcrumb--service, .breadcrumb--contact, .breadcrumb--news, .breadcrumb--works, .breadcrumb--archive-works{
+    text-transform: uppercase;
+    margin-top: rem(10);
+    @include mq(md){
+        margin-top: rem(20);
+    }
+}
+
+.breadcrumb--single-works, .breadcrumb--single-news{
+    margin-top: rem(91);
+    @include mq(md){
+        margin-top: rem(200);
+    }
+}
+
+.breadcrumb span:not(:last-of-type)::after {
+    display: inline-block;
+    top: 50%;
+    transform: translateY(-50%);
+    content: "";
+    width: rem(20);
+    height: rem(1);
+    margin-left: rem(10);
+    margin-right: rem(10);
+    margin-bottom: rem(3);
+    background-color: #A9A9A9; 
+}
+
+.breadcrumb__inner{
+    padding: 0 rem(10);
+    @include mq(md){
+        padding: 0 rem(60);
+    }
+}
+
+.breadcrumb .current-item{
+    color: $black;
+    display: inline-block;
+    padding: 0;
+    margin-top: -3px;
+    vertical-align: middle;
+    max-width:rem(160);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

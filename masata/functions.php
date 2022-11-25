@@ -149,3 +149,17 @@ function my_excerpt_more( $more ) {
 
 }
 add_filter( 'excerpt_more', 'my_excerpt_more' );
+
+
+remove_filter('the_content', 'wpautop');
+
+//メニューの登録
+function register_my_menus() { 
+	register_nav_menus( array( //複数のナビゲーションメニューを登録する関数
+	//'「メニューの位置」の識別子' => 'メニューの説明の文字列',
+		'pc-nav' => 'PCメニュー', //メインメニューがメニューの位置と同期する
+		'sp-nav' => 'SPメニュー',
+		'footer'  => 'フッターメニュー',
+	) );
+	}
+	add_action( 'after_setup_theme', 'register_my_menus' );

@@ -1,0 +1,35 @@
+@use "global" as *;
+
+.about-section__subtitle{
+    font-size: rem(12);
+    font-weight: $bold;
+    color:#001E63;
+    @include mq(md){
+        font-size: rem(16);
+    }
+}
+
+.about-section__title{
+    position:relative;
+    display: inline-block;
+    font-size: rem(26);
+    font-family: $second;
+    font-weight: $bold;
+    @include mq(md){
+        font-size: rem(40);
+    }
+}
+
+.about-section__title::after{
+    position: absolute;
+    content: "";
+    height: rem(2);
+    width:rem(60);
+    background-color: $black;
+    top:50%;
+    transform: translateY(-50%);
+    right:-70px;
+    @include mq(md){
+        right:-80px;
+    }
+}

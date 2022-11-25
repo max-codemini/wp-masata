@@ -1,0 +1,21 @@
+@use "global" as *;
+
+.contact-sub__inner{
+    width: 100%;
+    max-width: rem(640);
+    padding-left: rem(20);
+    padding-right: rem(20);
+    margin-top: rem(30);
+    margin-bottom: rem(80);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-sub__text{
+    font-size: rem(14);
+    font-weight: $bold;
+}
+
+.contact-sub__form{
+    margin-top: rem(40);
+}
