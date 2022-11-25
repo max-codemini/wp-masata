@@ -50,7 +50,7 @@ $contact = esc_url( home_url('contact'));
                 </ul>
 
                 <!--タブを切り替えて表示するコンテンツ-->
-                <div class="js-panel-group tab-panel__panel-group">
+                <div class="js-panel-group tab-panel__panel-group tab-panel__panel-group--news">
 
                     <!-- AAAAAAAA -->
                     <div class="js-panel tab-panel__panel tab-A is-show">

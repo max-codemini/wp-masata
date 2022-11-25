@@ -515,10 +515,14 @@ select::-ms-expand {
 }
 
 .archive-works__inner--sub {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 640px;
 	padding-left: 40px;
 	padding-left: 2.5rem;
 	padding-right: 40px;
 	padding-right: 2.5rem;
+	width: 100%;
 }
 
 .archive-works__items--sub {
@@ -1827,10 +1831,14 @@ select::-ms-expand {
 }
 
 .news__inner--sub {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 640px;
 	padding-left: 40px;
 	padding-left: 2.5rem;
 	padding-right: 40px;
 	padding-right: 2.5rem;
+	width: 100%;
 }
 
 .news__items--sub {
@@ -1953,12 +1961,14 @@ select::-ms-expand {
 }
 
 .not-found__button--pc {
+	border: 1px solid white;
 	color: #fff;
 }
 
 .pagenavi--news {
 	margin-top: 40px;
 	margin-top: 2.5rem;
+	text-align: center;
 }
 
 .pagenavi--archive-works {
@@ -2130,6 +2140,11 @@ select::-ms-expand {
 	width: 0.4375rem;
 }
 
+.previous-button:hover.previous-button span::after {
+	left: 12px;
+	left: 0.75rem;
+}
+
 .previous-button--completion {
 	background-color: #011950;
 	max-width: 295px;
@@ -2155,6 +2170,19 @@ select::-ms-expand {
 .previous-button--completion:hover.previous-button--completion span::after {
 	left: 85px;
 	left: 5.3125rem;
+}
+
+.previous-button--not-found {
+	border: 1px solid #fff;
+}
+
+.previous-button--not-found span {
+	color: #fff;
+}
+
+.previous-button--not-found span::after {
+	border-bottom: 1px solid #fff;
+	border-left: 1px solid #fff;
 }
 
 .profile {
@@ -3712,9 +3740,8 @@ a[href^="tel:"] {
 }
 
 .category__list--news {
-	max-width: 12.5rem;
+	max-width: 13.75rem;
 	padding-right: 1.875rem;
-	padding-right: 0;
 }
 
 .category__list--archive-works {
@@ -4055,9 +4082,6 @@ a[href^="tel:"] {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
 }
 
 .not-found {
@@ -4122,13 +4146,14 @@ a[href^="tel:"] {
 	border-left: 1px solid #fff;
 }
 
-.pagenavi--archive-works {
+.pagenavi--news {
 	margin-top: 3.75rem;
 	text-align: left;
 }
 
-.previous-button:hover.previous-button span::after {
-	left: 0.75rem;
+.pagenavi--archive-works {
+	margin-top: 3.75rem;
+	text-align: left;
 }
 
 .previous-button--completion {
@@ -4447,9 +4472,16 @@ a[href^="tel:"] {
 	padding-left: 3.75rem;
 }
 
+.tab-panel__panel-group--news {
+	max-width: 46.875rem;
+	width: 100%;
+}
+
 .topics__body {
+	max-width: 48.5rem;
 	padding-bottom: 1.875rem;
 	padding-top: 1.875rem;
+	width: 100%;
 }
 
 .topics__date {

@@ -33,6 +33,14 @@
     }
 }
 
+.tab-panel__panel-group--news{
+  @include mq(md){
+    width: 100%;
+    max-width: rem(750);
+  }
+  
+}
+
 .tab-panel__panel{
     display:none;
 }
@@ -40,7 +48,6 @@
 .tab-panel__panel.is-show{
     display:block;
 }
-
 
 
 

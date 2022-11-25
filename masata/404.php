@@ -21,8 +21,8 @@ $contact = esc_url( home_url('contact'));
                 <h2 class="not-found__title">404 Not Found</h2><!-- /.not-found__title -->
                 <p class="not-found__text">お探しのページはURLが誤っているか、削除された可能性があります。<br>3秒後にTOPページに遷移します</p><!-- /.not-found__text -->
                 <div class="not-found__button-block">
-                    <a href="<?php echo $home ?>" class="not-found__button--pc previous-button">
-                        <span class="previous-button__text">TOPへ戻る</span>
+                    <a href="<?php echo $home ?>" class="previous-button previous-button--not-found">
+                        <span class=" previous-button__text previous-button__text--not-found">TOPへ戻る</span>
                     </a><!-- /.c-button -->
                 </div>
             </div>
@@ -32,7 +32,7 @@ $contact = esc_url( home_url('contact'));
     <div class="not-found__wrapper u-mobile">
         <p class="not-found__text">お探しのページはURLが誤っているか、削除された可能性があります。<br>3秒後にTOPページに遷移します</p><!-- /.not-found__text -->
         <div class="not-found__button-block">
-            <a href="<?php echo $home ?>" class="not-found__button--sp previous-button">
+            <a href="<?php echo $home ?>" class="previous-button">
                 <span class="previous-button__text">TOPへ戻る</span>
             </a><!-- /.c-button -->
         </div>

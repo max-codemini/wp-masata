@@ -35,11 +35,8 @@
 }
 
 .previous-button:hover.previous-button span::after{
-    @include mq(md){
         left:rem(12);
-    }
 }
-
 
 
 
@@ -85,3 +82,17 @@
 // .previous-button--single-works:hover.previous-button--single-works span::after{
 //     left:rem(85);
 // }
+
+
+.previous-button--not-found{
+    border:1px solid $white;
+}
+
+.previous-button--not-found span{
+    color: $white;
+}
+
+.previous-button--not-found span::after{
+    border-bottom: 1px solid $white;
+    border-left: 1px solid $white;
+}

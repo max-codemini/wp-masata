@@ -113,6 +113,10 @@
 .archive-works__inner--sub{
     padding-left: rem(40);
     padding-right: rem(40);
+    max-width: 640px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .archive-works__items--sub{
