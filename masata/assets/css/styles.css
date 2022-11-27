@@ -301,7 +301,7 @@ select::-ms-expand {
 
 .about-section__title {
 	display: inline-block;
-	font-family: "Oswald";
+	font-family: "Oswald", sans-serif;
 	font-size: 26px;
 	font-size: 1.625rem;
 	font-weight: 700;
@@ -531,7 +531,7 @@ select::-ms-expand {
 
 .breadcrumb {
 	color: #A9A9A9;
-	font-family: "Roboto";
+	font-family: "Roboto", sans-serif;
 	font-size: 15px;
 	font-size: 0.9375rem;
 	font-weight: 400;
@@ -634,7 +634,7 @@ select::-ms-expand {
 .button span {
 	color: #001E63;
 	display: inline-block;
-	font-family: "Roboto";
+	font-family: "Roboto", sans-serif;
 	font-size: 14px;
 	font-size: 0.875rem;
 	font-weight: 300;
@@ -820,7 +820,7 @@ select::-ms-expand {
 }
 
 .completion__title {
-	font-family: "Oswald";
+	font-family: "Oswald", sans-serif;
 	font-size: 24px;
 	font-size: 1.5rem;
 	font-weight: 700;
@@ -1062,7 +1062,7 @@ select::-ms-expand {
 }
 
 .feature__title {
-	font-family: "Oswald";
+	font-family: "Oswald", sans-serif;
 	font-size: 14px;
 	font-size: 0.875rem;
 	font-weight: 300;
@@ -1090,7 +1090,7 @@ select::-ms-expand {
 .footer-nav__item a {
 	color: #fff;
 	display: block;
-	font-family: "Roboto";
+	font-family: "Roboto", sans-serif;
 	font-size: 16px;
 	font-size: 1rem;
 	letter-spacing: 0.125em;
@@ -1526,7 +1526,7 @@ select::-ms-expand {
 }
 
 .fv-sub__title {
-	font-family: "Oswald";
+	font-family: "Oswald", sans-serif;
 	font-size: 44px;
 	font-size: 2.75rem;
 	font-weight: 700;
@@ -1587,7 +1587,7 @@ select::-ms-expand {
 	font-size: 23px;
 	font-size: 1.4375rem;
 	font-weight: 400;
-	font-weight: "Roboto";
+	font-weight: "Roboto", sans-serif;
 	margin-top: 10px;
 	margin-top: 0.625rem;
 	padding-bottom: 10px;
@@ -1860,7 +1860,7 @@ select::-ms-expand {
 .next-button span {
 	color: #001E63;
 	display: inline-block;
-	font-family: "Roboto";
+	font-family: "Roboto", sans-serif;
 	font-size: 14px;
 	font-size: 0.875rem;
 	font-weight: 300;
@@ -1925,7 +1925,7 @@ select::-ms-expand {
 
 .not-found__title {
 	color: #fff;
-	font-family: "Oswald";
+	font-family: "Oswald", sans-serif;
 	font-size: 35px;
 	font-size: 2.1875rem;
 	font-weight: 700;
@@ -1981,7 +1981,7 @@ select::-ms-expand {
 	background-color: #E9EEEF;
 	border: none;
 	color: #242424;
-	font-family: "Oswald";
+	font-family: "Oswald", sans-serif;
 	font-size: 14px;
 	font-size: 0.875rem;
 	margin-left: 6px;
@@ -1997,7 +1997,7 @@ select::-ms-expand {
 	border: none;
 	color: #fff;
 	display: inline-block;
-	font-family: "Oswald";
+	font-family: "Oswald", sans-serif;
 	font-size: 14px;
 	font-size: 0.875rem;
 	padding: 10px 16px 9px 17px;
@@ -2053,7 +2053,7 @@ select::-ms-expand {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	font-family: "Roboto";
+	font-family: "Roboto", sans-serif;
 	font-size: 16px;
 	font-size: 1rem;
 	font-weight: 400;
@@ -2113,7 +2113,7 @@ select::-ms-expand {
 .previous-button span {
 	color: #001E63;
 	display: inline-block;
-	font-family: "Roboto";
+	font-family: "Roboto", sans-serif;
 	font-size: 14px;
 	font-size: 0.875rem;
 	font-weight: 300;
@@ -2317,7 +2317,7 @@ select::-ms-expand {
 
 .section-title {
 	color: #000000;
-	font-family: "Oswald";
+	font-family: "Oswald", sans-serif;
 	font-size: 38px;
 	font-size: 2.375rem;
 	line-height: 1;
@@ -2368,7 +2368,7 @@ select::-ms-expand {
 
 .service-card__subtitle {
 	color: #fff;
-	font-family: "Oswald";
+	font-family: "Oswald", sans-serif;
 	font-size: 16px;
 	font-size: 1rem;
 	left: 50px;
@@ -2468,7 +2468,7 @@ select::-ms-expand {
 .service-section__number {
 	color: #001E63;
 	display: inline-block;
-	font-family: "Oswald";
+	font-family: "Oswald", sans-serif;
 	font-size: 32px;
 	font-size: 2rem;
 	font-weight: 700;
@@ -3127,7 +3127,7 @@ select::-ms-expand {
 }
 
 .tab-service__title {
-	font-family: "Oswald";
+	font-family: "Oswald", sans-serif;
 	font-size: 30px;
 	font-size: 1.875rem;
 	font-weight: 700;

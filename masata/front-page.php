@@ -572,10 +572,7 @@ $contact = esc_url( home_url('contact'));
                         }
                         ?>
                     </a><!-- /.topics__title -->
-                </div><!-- /.topics__wrapper -->
-
-            </div><!-- /.topics__body -->
-        </div><!-- /.topics__inner -->      
+                </div><!-- /.topics__wrapper -->    
     </div><!-- /.topics -->
     <!-- 繰返し終了 -->
 
@@ -594,7 +591,7 @@ $contact = esc_url( home_url('contact'));
 
 
 
-<div class="news__button">
+            <div class="news__button">
                 <a href="<?php echo $news?>" class="button button--noline">
                     <span>read more</span>
                 </a>

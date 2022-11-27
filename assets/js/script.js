@@ -238,7 +238,10 @@ jQuery(function ($) {
   $(document).ready(function () {
     var bet1stheight = $(".js-tab-group").height(); //ナビの高さ
 
-    var between1st = $(".js-panel-group").offset().top; //コンテンツのページ上部からの位置
+
+    if ($(".js-panel-group").length) {
+      var between1st = $(".js-panel-group").offset().top;//コンテンツのページ上部からの位置
+    }
 
     var between2nd = $(".js-panel-group").outerHeight(); //コンテンツの高さ
 

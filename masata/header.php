@@ -1,33 +1,37 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
-  <!-- <meta charset="<?php bloginfo( 'charset' ); ?>">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="format-detection" content="telephone=no">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+    <meta charset="<?php bloginfo( 'charset' ); ?>">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <meta name="format-detection" content="telephone=no" />
     <meta name=”robots” content=”noindex”>
     <!-- meta情報 -->
-    <title></title>
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
+    <title>LUSSO</title>
+    <meta name="description" content="株式会社LUSSOのホームページです。" />
+    <meta name="keywords" content="LUSSO" />
     <!-- ogp -->
-    <meta property="og:title" content="CodeUps" />
+    <meta property="og:title" content="LUSSO" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://max-log.conohawing.com/max_codeups/" />
-    <meta property="og:image" content="images/common/works_1.jpg" />
-    <meta property="og:site_name" content="CodeUps" />
-    <meta property="og:description" content="株式会社CodeUpsのホームページです。"/>
+    <meta property="og:url" content="https://max-test.site/lusso/" />
+    <meta property="og:image" content="images/common/favicon.jpg" />
+    <meta property="og:site_name" content="LUSSO" />
+    <meta property="og:description" content="株式会社LUSSOのホームページです。"/>
     <!-- ファビコン -->
     <link rel="icon" href="<?php echo get_template_directory_uri() ?>/assets/images/common/favicon.jpg"/>
     <!-- fontAwesome -->
     <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous"> -->
     <!-- font family -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@300;400;500;700&display=swap" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
+
     <!-- css -->
     <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/> -->
     <link rel="stylesheet" href="//unpkg.com/swiper/swiper-bundle.min.css">
